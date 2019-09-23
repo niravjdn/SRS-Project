@@ -14,3 +14,7 @@
 ## Tools
 
 Overleaf Shared Document
+
+## Instructor
+
+Prof. Pankaj Kamthan
