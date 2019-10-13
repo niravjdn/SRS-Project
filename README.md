@@ -10,6 +10,18 @@
 | jingya pan | panjingya0929@gmail.com | 
 |  DIVYA-DIWAKAR PANDIT | divyapandit13@gmail.com | 
 
+
+## Task Allocation for Deliverable 1
+
+| Contributor | Member Name |
+| --- |  --- |
+| Brainstorming  |  Nirav, Jingya, Rohan, Divya, Kosha  |
+|  Deciding Type of System (Meeting) | Nirav, Jingya, Rohan, Divya, Kosha  |
+|  Problem 1 - Description of Problem |  Nirav, Kosha  |
+|  Problem 2 (Context of Use) | Rohan and Nirav |
+|  Problem 3 (Domain Model) |  Jingya|
+|  Problem 4 (Usecase) |  Divya and Kosha|
+
 ## Instructor
 Prof. Pankaj Kamthan
 
