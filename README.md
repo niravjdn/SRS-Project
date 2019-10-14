@@ -10,11 +10,10 @@
 | jingya pan | panjingya0929@gmail.com | 
 |  DIVYA-DIWAKAR PANDIT | divyapandit13@gmail.com | 
 
+## Instructor
+Prof. Pankaj Kamthan
 
 ## Tools
 
 Overleaf Shared Document
 
-## Instructor
-
-Prof. Pankaj Kamthan
