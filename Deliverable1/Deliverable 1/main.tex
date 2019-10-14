@@ -164,8 +164,9 @@ Instructor: PANKAJ KAMTHAN
 \vspace*{0.1in}
 \begin{large}
 By \\
+\textbf{Team G}\\
 Nirav Ashvinkumar Patel - 40081268\\
-Rohan Deepak Paspallu- 40093648\\
+Rohan Deepak Paspallu - 40093648\\
 Jingya Pan - 40044079\\
 Divya Pandit - 40087471 \\
 Koshaben Patel - 40094385 \\
@@ -185,27 +186,27 @@ Koshaben Patel - 40094385 \\
 
 \chapter{Introduction}
 \section{Introduction}
-This document provides an understanding of \gls{igo}, a ticket vending machine (\gls{tvm}) which shall be used in Canada, Montreal, Quebec. 
-
+This document is detailed description of \gls{igo}, an electronic ticketing kiosk of public transportation which shall be designed to facilitate individuals of Quebec, Canada.
 
 \section{Purpose}
-The purpose of this document is to collect, analyse and define needs and features of an online Ticket Vending Machine system (iGo) in Montreal, Quebec, Canada. It focuses on the features expressed by stakeholders which they would like to see in their application. This document provides details of how iGo - an online ticket vending machine fulfills these needs.It  describes the problems graphically with the context of use modeling, problem domain modeling, stakeholders modeling and use case modeling for different perspectives.
-\section{Scope}
-This document applies to the Online Ticket Vending Machine(or System) (called iGo)  in Montreal, Quebec, Canada, mainly for metros and buses. iGo plays as an online platform  allowing  travellers  to top up their \gls{opus} cards and manage \gls{stm} transactions themselves. iGo does not include the development and maintenance part of STM system and physical STM Ticket Vending Machines in STM offices.
+The purpose of this document is to elicit requirements of stakeholders for problem domain of public transportation. Analysis of requirements is done to provide features to enhance user experience. Stakeholder's requirements is collected by conducting interviews of individuals using \gls{stm}. Furthermore, provision of features is realised by representing problem domain model, context of use model, use case model.
 
+\section{Scope}
+This document is applicable for electronic ticket vending machine (iGo) in Quebec, Canada. iGo is an online platform for users allowing them to search fare related queries and perform transcation to recharge \gls{opus}. Scope of development and maintenance part of physical STM ticket vending machine is excluded.   
 
 
 \chapter{Product Overview}
 
 \section{Problem Statement}
-Most of transportation we utilize every day in Montreal, Quebec, Canada is given by STM (Montreal Transit Corporation) with buses and metros. The travellers have either have to buy re-loadable OPUS card or one time usable tickets. The travellers must have to reload their card every week or every month. In order to top up their OPUS card, travellers often wait for a long queue in front of \gls{TVM} machines and STM office stations. The travelling process could be interrupted due to the fact that people usually forget to top up their OPUS card on time. \\ \\
+Primary source of public transportation in Montreal, Quebec, Canada is buses and metros. Services of public transport is provided by STM. The current system is designed in such a way that travellers are able to purchase tickets, top up OPUS card using physical ticket vending machines at metro stations. However, OPUS card is not offered by ticket vending machines. Travellers have to recharge OPUS card every month and individuals often stand in queues that causes them inconvenience. Some individuals share the OPUS card to other people and abuse the current system. Prevention of such activity is tiresome for STM officers. There are several reports of lost OPUS card. \\
 
-iGo is an online Ticket Vending Machine Web Application that integrates with STM OPUS Card reloading system. People can connect and top up their OPUS cards online using their desktops or mobile devices at home. The payment can be made using debit, credit cards or via Paypal.
+iGo is proposed to overcome difficulties faced by current system. iGo covers several features of current system and provides solutions to problems faced by individuals.
+
 
 \section{iGo Description}
-The solution is intended to build an online web application that enables \gls{traveller} to register, login, link and top up their OPUS cards. The similar system exist in Toronto Public Transport. iGo will establish a communication with the STM and manipulate data related to OPUS card. This system will allow user to top-up their cards from their home and not wasting time waiting in queue. \\
+iGo is designed to overcome difficulties faced using current system. Solution can be provided by developing web application that \gls{traveller} can use to register, login, recharge OPUS card, manipulate information of profiles. Web application will allow travellers to perform transaction to recharge OPUS card without wasting time in long queues. \\
 
-A customer will be required to sign up an account with iGo on their first time. In order to top up or make transactions, a traveller is required to link their OPUS card number (displaying on their OPUS card)  with their registered iGo Account. Once user has signed up successfully and linked their OPUS card, they shall be able to see all the transactions made over their account. A traveller will be able to use their existing OPUS cards to travel in Montreal (Quebec, Canada) via buses and metros operated by STM. In this way, the solution will have backward compatibility.\\
+The traveller is supposed to register into iGo if interaction is happening for the first time. Once they are registered, remaining activities such as finding details of fare, recharging an OPUS card by linking OPUS number to the registered account, scheduling payment can be performed.\\
 
 \begin{figure}[h!]
   
@@ -215,38 +216,25 @@ A customer will be required to sign up an account with iGo on their first time. 
 }
 \end{figure}
 
-iGo must be able to provide the following functionalities to  travellers:
+iGo is intended to provide following functionalities to facilitate travellers:
 \begin{enumerate}
-  \item A traveller shall be able to register to an iGo account online, with their email address and be able to link their OPUS card number to their iGo account.
-  \item A traveller shall be able to make a payment transaction to top-up opus card linked to their account. After login, a traveller will select a top-up amount. The transaction could be made via Credit Card, Debit Card or PayPal. 
-  \item A traveller shall be able to see the OPUS card balance or expiry date of top-up. 
-  \item A traveller shall be able to view the OPUS transactions, and must be able to print out or export that transactions.
-   \item A traveller shall be able to set up scheduled payment for their OPUS card. 
-  \item A traveller shall be able to use their OPUS card to go through buses or metros. The OPUS scanner at STM gates and STM buses must be able to detect if the OPUS card has a enough balance or not.
+  \item A traveller shall able to register online to iGo system, log into system to manipulate information of profiles.
+  \item A traveller shall be able to perform a payment transaction to top-up opus card linked to their account. After login, a traveller will select a top-up amount. The transaction could be made via Debit card, Credit card or Paypal. 
+   \item A traveller shall be able to set up scheduled payment for their OPUS card so the amount gets deducted automatically. 
+   \item A traveller shall be able to see information related to OPUS card. 
+   \item A traveller shall be able to view the OPUS transactions history.
+   \item A traveller shall be able to add more than one OPUS cards under one iGo account.
+ 
+   
   \item A traveller shall be able to unlink any OPUS cards under their iGo account.
-  \item A traveller shall be able to add more than one OPUS cards under one iGo account.
-
+  
 \end{enumerate}
 
-iGo will communicate each transaction to STM System and obtain the confirmation of the transaction. Gradually, a transaction will be considered complete by STM once it has been paid successfully and it has been approved by STM. iGo will connect with STM System to make sure transactions are successfully made.\\
+The transaction for payment will be performed by iGo communicating with bank system. iGo will approve the transaction payment once money is deducted from respective bank.\\
 
-While sigining up, if IGo System detects the email has been used by another user, the user shall have to sign up using other email. If STM determines that the STM card number is linked to another existing iGo account, a traveller will not be able to link this OPUS card number to their iGo account unless other user unlink the opus card from their account. In all cases, iGo is required to display an explanation of the problem. \\
+The Signup module will stop a traveller if email is used by another user, in this case a traveller must singup using other email address. If a traveller tries to link OPUS that is linked to another iGo account, such activity will be denied by iGo.\\
 
-iGo will also maintain its internal log of transactions to facilitates resolving ambiguities arising from a connection failure in the middle of transactions between iGo and STM System. Entries will be made in the log when a traveller registers an account, logs in and  working on their their login session. \\
-
-\begin{figure}[H]
-  
-  \includegraphics[width=0.8\textwidth]{images/arch.png}
-  \centering
-  \caption{ Overview of the STM iGo architecture}
-
-\end{figure}
-
-\subsection{Project Assumption}
-
-For this project, iGo does not implement STM Card Readers which will be installed on buses and metros entries. The supposition that is made that STM will execute and introduce STM Card Readers which will have the option to distinguish a STM card by its number, checking its equalization and refreshing it in STM's framework.
-
-
+iGo System will maintain track of its users and their activities such as signup, login, transaction history.
 
 \chapter{Context of Use}
 We use the user-centric context of use framework \cite{contextofusecasekamthan}  to identify and classify factors that influence the utility and usability of iGo.\\
@@ -322,7 +310,6 @@ The above table describes the \gls{cuigo} of iGo\\
 
 
 %new chapter
-
 \section{Stakeholders}
 
 
@@ -337,14 +324,14 @@ The above table describes the \gls{cuigo} of iGo\\
 
 \end{enumerate}
 
-iGo development team and STM are two main stakeholder groups without whom iGo project could not succeed. Since iGo and STM are related to a public transportation that operates daily transit services in Montreal, Quebec, Canada, two other stakeholders group must be analysed, which are the Federal Government of Canada and the Quebec Government. The last stakeholder group that directly uses and enjoys benefits of iGo - Montreal city residents must also be analysed. 
+iGo development group and STM are two primary partner bunches without whom iGo venture couldn't succeed. Since iGo and STM are identified with an open transportation that works day by day travel benefits in Montreal, Quebec, Canada, two different partners gathering must be broke down, which are the Federal Government of Canada and the Quebec Government. The last partner bunch that straightforwardly uses and appreciates advantages of iGo - Montreal city inhabitants should likewise be dissected.
 
 \section{Stakeholders description}
 After discovering stakeholders via mind mapping method, we come up with two main group of stakeholders:
 \begin{enumerate}
-    \item Non-User stakeholders: Stakeholders who are not end clients of an iGo framework. They might be influenced by the impact of iGo (emphatically or contrarily) or they may influence the achievement of iGo. We bunch them into Non-User partners gathering.
+    \item Non-User stakeholders: Stakeholders who are not end customers of an iGo system. They may be affected by the effect of iGo (unequivocally or oppositely) or they may impact the accomplishment of iGo. We bundle them into Non-User accomplices gathering.
     \item End-User stakeholders:
-Stakeholders who are end clients of an iGo framework, who legitimately advantage from iGo highlights and who straightforwardly interface with iGo framework.
+ The end customers of an iGo system, who genuinely advantage from iGo features and who direct interface with iGo structure.
 
 \end{enumerate}
 
@@ -441,7 +428,7 @@ In the wake of examining obligations of partners , we think of the accompanying 
   
   \includegraphics[width=0.8\textwidth]{images/context.png}
   \centering
-  \caption{ The Onion model representation for IGO (SMIGO)}
+  \caption{ The Onion model representation for IGO }
 
 \end{figure}
 We organize iGo partners dependent on their impact and significance it could be said that without them, iGo will fall flat.
@@ -475,7 +462,7 @@ We organize iGo partners dependent on their impact and significance it could be 
 
 
 
-
+\chapter{Domain Model}
 \section{Problem Domain Model}
 
 % domain model description
@@ -507,7 +494,7 @@ From the domain model of the IGo system, we can clearly see the properties of ea
 
 
 \chapter{Use Case Model }
-\subsection{Use Case Diagram}
+\section{Use Case Diagram}
  \begin{figure}[H]
   
   \includegraphics[width=0.8\textwidth]{images/usecase.png}
@@ -635,7 +622,7 @@ Open Issues & customer needs and payment details details or could result in nega
   \includegraphics[width=0.8\textwidth]{images/SSD.PNG}
   \centering
 
-   \caption{System Sequence Diagram for TVM}
+   \caption{Sequence Diagram for TVM}
 
 \end{figure}
 
@@ -646,7 +633,7 @@ Open Issues & customer needs and payment details details or could result in nega
   \includegraphics[width=0.8\textwidth]{images/Activity.PNG}
   \centering
 
-   \caption{Activity Diagram for TVM}
+   \caption{Activity Diagram for payment case}
 
 \end{figure}
 
@@ -985,7 +972,7 @@ Question: Was it easy to use?\\
 Answer: Yes, very easy.\\
 
 Question: Any difficulties you faced when performing a transaction?\\
-Answer: No, actually not.Sometimes its due to internet issues but thta still fine.\\
+Answer: No, actually not.Sometimes its due to internet issues but that is still fine.\\
 
 Question: What would love to see changed?\\
 Answer: The application we use, should be more privatized and portability importantly should be prioritized.\\
@@ -1012,6 +999,107 @@ Question: Do you wish to receive in advance email informing that their schedule 
 Answer: Yes, that would be helpful, that would help me keeping track of my transactions.\\
 
 Thank you so much for your time. Mr.Aditya! It was a pleasure speaking with you. \\
+
+
+\section{Interview 4}
+\textbf{Date-} 09-30-2019\\
+\textbf{Time-} 15:15 PM to 15:35 PM\\
+\textbf{Interviewers:}\\
+
+\textbf{Name:} Koshaben Patel \\
+\textbf{Institute:} Concordia University, Montreal \\
+\textbf{Industry:} Educational sector\\
+\textbf{Title:} Students \\ 
+
+\textbf{Interviewee:}\\
+
+\textbf{Name:} Deep Patel \\
+\textbf{Institute:} Concordia University, Montreal \\
+\textbf{Industry:} Educational sector\\
+\textbf{Job Title:} Undergraduate Teaching Assistant\\ 
+
+
+\textbf{Generic Questions:}\\
+
+Question: What do you study at Concordia University? \\
+Answer: I study master's in applied computer science at Concordia University.
+
+\textbf{Transportation Used:}\\
+
+Question: How often do you use STM transportation and why you do you prefer STM over other transportation methods?\\
+Answer: I use services of STM transportation frequently. I don't own a car, I rely on the services of STM. I use STM transportation over other mode of transport because of the convenience and fits my budget also.\\
+
+Question: How easy is it to access STM services from your residence?\\
+Answer: It's easy to access STM services as I live in downtown. My home is one block away from guy concordia metro station, so it's really easy to access services of STM.\\
+
+\textbf{Gadgets Used:}\\
+
+Question:What gadgets you use on a daily basis?\\
+Answer: On daily basis, mobile phone and laptop is used. Usage of laptop is comparatively higher than mobile phone.\\
+
+Question: How often you access these devices?\\
+Answer: I heavily use laptop and mobile phone. I use it for different purposes and that ranges from study, work, entertainment. \\
+
+Question: Which do you prefer using the most the metro or the bus?\\
+Answer: There is no such preference. However, I like metro more because in winter it's freezing to death.\\
+
+\textbf{Family Specifics:}\\
+
+Question: Are there any dependents or young members in your family and how many?\\
+Answer: No, nobody is dependent on me. It is best I think. \\
+
+\textbf{Specific Questions:}\\
+
+Question: When do you purchase tickets for your travel?\\
+Answer: I don't purchase tickets. As I am student, I reload OPUS every month. Most of the time, because of my busy schedule I end up reloading opus in the beginning of the month.\\
+
+Question: What are the difficulties you face when purchasing a ticket?\\
+Answer: One of the obvious difficulties is to stand in long queue to reload opus card, it is tiresome activity to be honest. It gets even more annoying because I am always rushing and sometimes people ahead me take forever to buy the tickets, I don't know what is the matter with them. Maybe some of them are tourists I assume. But yes, standing in queue is the difficulty I face when reloading opus card. \\
+
+Question: Does it irritate standing in long queues?\\
+Answer: Yes, as I said, it is tiresome activity and I hate to wait.\\
+
+Question: Will you prefer a system that enables you to recharge anytime and anywhere?\\
+Answer: Definitely. It will be a heaven on earth. I think many people will be happy to have the kind of system that lets them buy or recharge their cards. \\
+
+Question: Have you used any web application for your transactions previously? If yes, which one? \\
+Answer: Yes, I have used web applications such as amazon, flipkart, domino's pizza, fido and many more.
+
+Question: What did you like about the application?\\
+Answer: Those applications are convenient and the amount of time saved is something I love a lot. It almost eliminates need for cash currency for payment and I love it.\\
+
+Question: Was it easy to use?\\
+Answer: Yes, those applications are designed in such a way that most people are comfortable especially people of my generation. I can't say whether oldies find it easy to use.\\
+
+Question: Any difficulties you faced when performing a transaction?\\
+Answer: I don't remember me facing any troubles. It was great experience performing transactions online.\\
+
+Question: What would you love to see changed?\\
+Answer: I am concerned with security, I won't like if my private information is leaked. So, I will want those applications to provide me security. One more thing, I will be happy if STM provides some sort of discounts for regular customers or they should come up with subscription plans. \\
+
+Question: Assume you are using an online application to buy your tickets. To register into the system, do you prefer providing your phone number, email , both / neither? Why?\\
+Answer: Yes, I am comfortable with me sharing information as long as privacy is not compromised. However, It takes me time to trust on organisations. I hear others' experience and then I am comfortable sharing the information.\\
+ 
+Question: Once you register, do you prefer the account verification to activate your account to redirect to email/phone to make it more secure?\\
+Answer: Yes. It is a secured way to perform transaction activity. I prefer that step to be taken by any organisation.\\
+ 
+Question: Do you need an option to save your application logged-in in the device so next time the user does not need to login again?\\
+Answer: Yes, to log into system I wouldn't want to enter password every time as most of the time I log into system using my private computer. \\
+
+Question: Which are the online payments that you use?\\
+Answer: I use PayPal, and bunch of banking applications for purchasing stuff.\\
+ 
+Question: What is your predominant mode of transaction?\\
+Answer: I use credit card most of the time. I send money to my friends using interac feature of scotia bank. All the transactions are done using mobile banking application.\\
+ 
+Question: Do you want to save their payment credentials to save time during your upcoming transactions?\\
+Answer: Yes. As I said before, I wouldn't want to enter my details manually all the time.\\
+ 
+Question: Do you wish to receive in advance email informing that their schedule payment will be in, let’s say, next 2 days?\\
+Answer: Yes, It will be helpful if I am sent an email regarding schedule payment.\\
+
+Thank you so much Mr.Deep. Given information is valuable to me. Thanks for participation. \\
+
 
 \newpage
 \chapter{Team Contribution}
