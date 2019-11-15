@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Link Opus Card</title>
+<link rel="shortcut icon" th:href="@{/images/public-transport.png}"
+	type="image/png">
+
+<link
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" th:href="@{/css/card-local.css}" />
+<link
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+	rel="stylesheet">
+	
+<body class="text-center">
+	<div th:replace="header :: navbar"></div>
+	<br />
+	<br />
+	<br />
+	<div class="container">
+
+		<h1>Load OPUS Cards</h1>
+
+		<div align="center" th:if="${successMessage}"
+			class="alert alert-success alert-dismissible fade show" role="alert"
+			th:utext="${successMessage}"></div>
+
+		<div align="center" th:if="${errorMessage}"
+			class="alert alert-danger alert-dismissible fade show" role="alert"
+			th:utext="${errorMessage}"></div>
+		<br />
+		<div class="card container" style="width: 18rem;">
+			<div class="card-body">
+				<h5 class="card-title">Opus Card Details</h5>
+				<div class="card-text">
+
+					<dl>
+						<dt>Opus Card Number</dt>
+						<dd th:utext="${record.number}"></dd>
+						<dt>Current Balance</dt>
+						<dd th:utext="${record.balance}"></dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+
+<br/>
+
+<div class="body-text">Write your name in the right fields. Also write your imaginary card number. By clicking CCV field card will turn.</div>
+  <form>
+    <div class="form-container">
+      <div class="personal-information">
+        <h1>Payment Information</h1>
+      </div> <!-- end of personal-information -->
+           
+          <input id="column-left" class="form-control" type="text" name="first-name" placeholder="First Name"/>
+          <input id="column-right" type="text" name="last-name" placeholder="Surname"/>
+          <input id="input-field" type="text" name="number" placeholder="Card Number"/>
+          <input id="column-left" type="text" name="expiry" placeholder="MM / YY"/>
+          <input id="column-right" type="text" name="cvc" placeholder="CCV"/>
+         
+          <div class="card-wrapper"></div>
+      
+          <input id="input-button" type="submit" value="Submit"/>
+        
+    </form>
+  </div>
+
+
+
+
+
+
+		</main>
+
+<!-- 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"></script> -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" />
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+			integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+			integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/121761/card.js" />
+		<script src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/121761/jquery.card.js" />
+		<script>
+
+		$('form').card({
+		    container: '.card-wrapper',
+		    width: 280,
+
+		    formSelectors: {
+		        nameInput: 'input[name="first-name"], input[name="last-name"]'
+		    }
+		});
+		</script>
+</body>
+</html>

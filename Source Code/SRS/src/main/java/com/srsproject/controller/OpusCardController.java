@@ -77,8 +77,16 @@ public class OpusCardController {
 	@RequestMapping(value = { "/manage" }, method = RequestMethod.GET)
 	public ModelAndView viewLinkedOpusCards() {
 		ModelAndView modelAndView = new ModelAndView();
-		modelAndView.setViewName("manageLinkedOpusCarda");
+		modelAndView.setViewName("manageLinkedOpusCard");
 		modelAndView.addObject("records", cardRepository.findByEmail(getCurrentUser()));
+		return modelAndView;
+	}
+
+	@RequestMapping(value = { "/loadOpusCard/{id}" }, method = RequestMethod.GET)
+	public ModelAndView loadOpusCard(@PathVariable(value = "id") final long id) {
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.addObject("record", cardRepository.findById(id).get());
+		modelAndView.setViewName("loadOpusCard");
 		return modelAndView;
 	}
 
