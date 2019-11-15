@@ -34,7 +34,7 @@ public class iGOApp implements CommandLineRunner {
 	public void run(String... args) {
 
 		// if admin does not exist then insert admin in DB
-		User userExists = userService.findUserByEmail("admin@niravjdn.xyz");
+		User userExists = userService.findUserByEmail("niravjdn@gmail.com");
 		if (userExists == null) {
 			User user = new User();
 			user.setEmail("niravjdn@gmail.com");
@@ -44,8 +44,15 @@ public class iGOApp implements CommandLineRunner {
 
 			userService.saveUser(user);
 		}
-		for (int i = 0; i < 3; i++) {
-			OpusCard card = new OpusCard(i, 0, String.valueOf(OpusNumberGenerator.numbGen()), null);
+		long number = 1212121212121L;
+		for (int i = 1; i < 10; i++) {
+			OpusCard card = null;
+			if(i%2 != 0) {
+				card = new OpusCard(i, (long) 0.0, ++number, null);
+			}else {
+				card = new OpusCard(i, (long) 0.0, OpusNumberGenerator.numbGen(), null);
+			}
+			System.err.println("Adding "+card.getNumber());
 			cardRepository.save(card);
 		}
 	}

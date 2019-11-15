@@ -20,8 +20,8 @@
 					Opus Cards</a>
 				<div class="dropdown-menu dropdown-menu-right">
 					<a th:href="@{/link}" class="dropdown-item">
-						Link OPUS </a> <a th:href="@{/unlink}"
-						class="dropdown-item">Unlink Opus Card</a>
+						Link OPUS </a> <a th:href="@{/manage}"
+						class="dropdown-item">Manage Opus Cards</a>
 				</div></li>
 
 		</ul>
@@ -30,7 +30,7 @@
 		<ul class="nav navbar-nav ml-auto">
 			<li class="nav-item dropdown"><a href="#"
 				class="nav-link dropdown-toggle" data-toggle="dropdown"
-				th:utext="${name}"></a>
+				th:utext="${username}"></a>
 				<div class="dropdown-menu dropdown-menu-right">
 					<div class="dropdown-divider"></div>
 					<a th:href="@{/logout}" class="dropdown-item">Logout</a>

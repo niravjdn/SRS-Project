@@ -38,9 +38,8 @@ public class OpusCard {
 	private long balance;
 	
 	@Column(name = "number")
-	private String number;
+	private long number;
 	
-    @ManyToOne
-    @JoinColumn(name = "userHaving")
-    User userHaving;
+	@Column(name = "email")
+    private String email;
 }

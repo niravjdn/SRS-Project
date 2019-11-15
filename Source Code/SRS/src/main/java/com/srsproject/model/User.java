@@ -49,8 +49,5 @@ public class User {
     
     private Set<Role> roles;
     
-    @OneToMany(mappedBy="userHaving") // change here
-    private Set<OpusCard> cards;
-
 
 }
