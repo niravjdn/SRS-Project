@@ -133,13 +133,15 @@ public class LoginController {
 
 			emailSenderService.sendEmail(mailMessage);
 
-			modelAndView.addObject("message",
+			modelAndView.addObject("successmessage",
 					"Request to reset password received. Check your inbox for the reset link.");
 			modelAndView.setViewName("successForgotPassword");
 
 		} else {
-			modelAndView.addObject("message", "This email does not exist!");
-			modelAndView.setViewName("error");
+			modelAndView.addObject("errorMessage", "This email does not exist!");
+			modelAndView.addObject("user", user);
+			modelAndView.setViewName("forgotPassword");
+			return modelAndView;
 		}
 
 		return modelAndView;
@@ -175,7 +177,7 @@ public class LoginController {
 			tokenUser.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
 			// System.out.println(tokenUser.getPassword());
 			userRepository.save(tokenUser);
-			modelAndView.addObject("message",
+			modelAndView.addObject("successMessage",
 					"Password successfully reset. You can now log in with the new credentials.");
 			modelAndView.setViewName("successResetPassword");
 		} else {
