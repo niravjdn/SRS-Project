@@ -1,4 +1,4 @@
-package com.sdmproject.login.helper;
+package com.srsproject.helper;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;

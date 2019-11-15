@@ -1,4 +1,4 @@
-package com.sdmproject.login.service;
+package com.srsproject.service;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -7,10 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.sdmproject.login.model.Role;
-import com.sdmproject.login.model.User;
-import com.sdmproject.login.repository.RoleRepository;
-import com.sdmproject.login.repository.UserRepository;
+import com.srsproject.model.Role;
+import com.srsproject.model.User;
+import com.srsproject.repository.RoleRepository;
+import com.srsproject.repository.UserRepository;
 
 @Service("userService")
 public class UserService {

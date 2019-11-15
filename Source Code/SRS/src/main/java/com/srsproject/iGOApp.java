@@ -1,4 +1,4 @@
-package com.sdmproject.login;
+package com.srsproject;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -9,10 +9,10 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.sdmproject.login.model.Role;
-import com.sdmproject.login.model.User;
-import com.sdmproject.login.repository.RoleRepository;
-import com.sdmproject.login.service.UserService;
+import com.srsproject.model.Role;
+import com.srsproject.model.User;
+import com.srsproject.repository.RoleRepository;
+import com.srsproject.service.UserService;
 
 @SpringBootApplication
 public class iGOApp implements CommandLineRunner {

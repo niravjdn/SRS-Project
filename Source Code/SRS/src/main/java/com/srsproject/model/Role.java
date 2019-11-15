@@ -1,4 +1,4 @@
-package com.sdmproject.login.model;
+package com.srsproject.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

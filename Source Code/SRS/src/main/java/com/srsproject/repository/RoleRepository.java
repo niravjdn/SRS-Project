@@ -1,8 +1,9 @@
-package com.sdmproject.login.repository;
+package com.srsproject.repository;
 
-import com.sdmproject.login.model.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
+import com.srsproject.model.Role;
 
 @Repository("roleRepository")
 public interface RoleRepository extends JpaRepository<Role, Integer> {

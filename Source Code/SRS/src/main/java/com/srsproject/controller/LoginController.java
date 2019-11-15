@@ -1,4 +1,4 @@
-package com.sdmproject.login.controller;
+package com.srsproject.controller;
 
 import javax.validation.Valid;
 
@@ -14,12 +14,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.sdmproject.login.helper.EmailSenderService;
-import com.sdmproject.login.model.ConfirmationToken;
-import com.sdmproject.login.model.User;
-import com.sdmproject.login.repository.ConfirmationTokenRepository;
-import com.sdmproject.login.repository.UserRepository;
-import com.sdmproject.login.service.UserService;
+import com.srsproject.helper.EmailSenderService;
+import com.srsproject.model.ConfirmationToken;
+import com.srsproject.model.User;
+import com.srsproject.repository.ConfirmationTokenRepository;
+import com.srsproject.repository.UserRepository;
+import com.srsproject.service.UserService;
 
 @Controller
 public class LoginController {

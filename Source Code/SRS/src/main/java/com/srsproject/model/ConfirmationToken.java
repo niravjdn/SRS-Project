@@ -1,4 +1,4 @@
-package com.sdmproject.login.model;
+package com.srsproject.model;
 
 import java.util.Date;
 import java.util.UUID;

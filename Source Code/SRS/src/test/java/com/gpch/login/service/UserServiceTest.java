@@ -1,9 +1,9 @@
 package com.gpch.login.service;
 
-import com.sdmproject.login.model.User;
-import com.sdmproject.login.repository.RoleRepository;
-import com.sdmproject.login.repository.UserRepository;
-import com.sdmproject.login.service.UserService;
+import com.srsproject.model.User;
+import com.srsproject.repository.RoleRepository;
+import com.srsproject.repository.UserRepository;
+import com.srsproject.service.UserService;
 
 import org.junit.Before;
 import org.junit.Test;

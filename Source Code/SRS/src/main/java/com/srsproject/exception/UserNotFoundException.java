@@ -1,4 +1,4 @@
-package com.sdmproject.login.exception;
+package com.srsproject.exception;
 
 public final class UserNotFoundException extends RuntimeException {
 

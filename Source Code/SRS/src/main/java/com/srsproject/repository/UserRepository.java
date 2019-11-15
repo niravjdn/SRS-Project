@@ -1,8 +1,9 @@
-package com.sdmproject.login.repository;
+package com.srsproject.repository;
 
-import com.sdmproject.login.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
+import com.srsproject.model.User;
 
 @Repository("userRepository")
 public interface UserRepository extends JpaRepository<User, Long> {
