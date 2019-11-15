@@ -22,6 +22,15 @@
 |  Problem 3 (Domain Model) |  Jingya|
 |  Problem 4 (Usecase) |  Divya and Kosha|
 
+
+## How to set up project
+
+- Install Spring Tool SUite 4 (https://spring.io/tools)
+- Install lombok - Follow Step 2,3 and 4 (https://howtodoinjava.com/automation/lombok-eclipse-installation-examples/)
+
+- **Import** is a maven project in IDE
+- Run as spring application
+
 ## Instructor
 Prof. Pankaj Kamthan
 
