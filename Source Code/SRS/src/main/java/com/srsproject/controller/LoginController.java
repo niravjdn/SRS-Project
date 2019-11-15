@@ -128,7 +128,7 @@ public class LoginController {
 			mailMessage.setTo(existingUser.getEmail());
 			mailMessage.setSubject("Complete Password Reset!");
 			mailMessage.setFrom("nairobley@gmail.com");
-			mailMessage.setText("To complete the password reset process, please click here: "
+			mailMessage.setText("To complete the password reset process, please click on the below link. \n "
 					+ "http://localhost:8080/confirm-reset?token=" + confirmationToken.getConfirmationToken());
 
 			emailSenderService.sendEmail(mailMessage);
