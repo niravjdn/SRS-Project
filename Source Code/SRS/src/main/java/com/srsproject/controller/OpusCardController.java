@@ -89,6 +89,15 @@ public class OpusCardController {
 		modelAndView.setViewName("loadOpusCard");
 		return modelAndView;
 	}
+	
+	@RequestMapping(value = { "/loadOpusCard" }, method = RequestMethod.POST)
+	public ModelAndView loadOpusCardPost(long id, long amount, RedirectAttributes atts) {
+		OpusCard card =  cardRepository.findById(id).get();
+		card.setBalance(amount);
+		cardRepository.save(card);
+		atts.addFlashAttribute("successMessage", "Card has been loaded successfully.");
+		return new ModelAndView("redirect:/manage");
+	}
 
 
 	@RequestMapping(value = "/addopus", method = RequestMethod.POST)
