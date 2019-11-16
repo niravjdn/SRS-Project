@@ -1,24 +1,20 @@
 package com.srsproject;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 import com.srsproject.helper.OpusNumberGenerator;
 import com.srsproject.model.OpusCard;
-import com.srsproject.model.Role;
 import com.srsproject.model.User;
 import com.srsproject.repository.OpusCardRepository;
-import com.srsproject.repository.RoleRepository;
 import com.srsproject.service.UserService;
 
 @SpringBootApplication
-public class iGOApp implements CommandLineRunner {
+public class iGOApp extends SpringBootServletInitializer implements CommandLineRunner {
 
 	@Autowired
 	private UserService userService;
@@ -55,6 +51,11 @@ public class iGOApp implements CommandLineRunner {
 			System.err.println("Adding "+card.getNumber());
 			cardRepository.save(card);
 		}
+	}
+	
+	@Override
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+		return application.sources(iGOApp.class);
 	}
 
 }

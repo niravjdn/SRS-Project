@@ -22,7 +22,6 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 @AllArgsConstructor
-@NoArgsConstructor
 @Entity
 public class ConfirmationToken {
 	
