@@ -34,7 +34,7 @@ public class iGOApp extends SpringBootServletInitializer implements CommandLineR
 		if (userExists == null) {
 			User user = new User();
 			user.setEmail("niravjdn@gmail.com");
-			user.setPassword("user");
+			user.setPassword("user123");
 			user.setName("Nirav");
 			user.setLastName("Patel");
 

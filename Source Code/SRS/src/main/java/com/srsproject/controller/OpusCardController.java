@@ -111,15 +111,15 @@ public class OpusCardController {
 		System.err.println(cardRepository.findAll());
 		if(card != null) {
 			if(card.getEmail() != null) {
-				modelAndView.addObject("errorMessage", "The card has already been linked to other account.");
+				modelAndView.addObject("errorMessage", "“The OPUS card is already linked to another iGo account.");
 			}else {
 				// proceed
 				card.setEmail(userName);
 				cardRepository.save(card);
-				modelAndView.addObject("successMessage", "The card has been linked successfully.");
+				modelAndView.addObject("successMessage", "The OPUS card has been linked successfully.");
 			}
 		}else {
-			modelAndView.addObject("errorMessage", "The card number is invalid.");
+			modelAndView.addObject("errorMessage", "The OPUS card number is invalid.");
 		}
 		
 		modelAndView.setViewName("linkOpus");
