@@ -40,7 +40,7 @@ public class iGOApp extends SpringBootServletInitializer implements CommandLineR
 
 			userService.saveUser(user);
 		}
-		long[] numbers = { 1212121212125L, 1632763288405L, 1212121212126L, 7132819765986L, 1212121212126L };
+		long[] numbers = { 1212121212125L, 1632763288405L, 1212121212126L, 7132819765986L, 12121212121267L };
 		for (int i = 0; i < numbers.length; i++) {
 			OpusCard card = null;
 			card = new OpusCard(i, (long) 0.0, numbers[i], null);
