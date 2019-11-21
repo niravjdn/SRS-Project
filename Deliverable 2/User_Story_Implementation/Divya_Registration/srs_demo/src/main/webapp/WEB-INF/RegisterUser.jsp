@@ -27,6 +27,19 @@
 		<label>Password</label>
 		<input type="password" name="password" placeholder="Password">	
 	</div>
+	<br>
+	<div>
+		<label>User First Name</label>
+		<input type="first name" name="first name" placeholder="First Name">
+	</div><br>
+	<div>
+		<label>User Last Name</label>
+		<input type="last name" name="last name" placeholder="Last Name">
+	</div><br>
+	<div>
+		<label>Phone Number</label>
+		<input type="number" name="number" placeholder="Phone Number">
+	</div><br>
 	
 	<br>
 	<br>
