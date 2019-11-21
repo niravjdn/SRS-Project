@@ -18,7 +18,7 @@
 	<br><br>
 	<div>
 		<label>Email Id</label>
-		<input type="email" name="email" placeholder="Email Id">
+		<input type="email" name="emailId" placeholder="Email Id">
 	</div>
 	
 	<br>
@@ -30,15 +30,21 @@
 	<br>
 	<div>
 		<label>User First Name</label>
-		<input type="first name" name="first name" placeholder="First Name">
+		<input type="first name" name="user_firstname" placeholder="First Name">
 	</div><br>
 	<div>
 		<label>User Last Name</label>
-		<input type="last name" name="last name" placeholder="Last Name">
+		<input type="last name" name="user_lastname" placeholder="Last Name">
 	</div><br>
+	
+	<div>
+		<label>Address</label>
+		<input type="address" name="address" placeholder="address">
+	</div><br>
+	
 	<div>
 		<label>Phone Number</label>
-		<input type="number" name="number" placeholder="Phone Number">
+		<input type="number" name="phone_number" placeholder="Phone Number">
 	</div><br>
 	
 	<br>

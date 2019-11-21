@@ -26,7 +26,7 @@
 			
 				<div>
 					<label>Email Id</label>
-					<input type="email" name="email" placeholder="Email Id">
+					<input type="email" name="emailId" placeholder="Email Id">
 				</div>
 				<div>
 					<label>Password</label>
@@ -35,7 +35,7 @@
 			
 			
 				<br><br>
-				<button type="submit" class="btn btn-primary btn-md" formaction="/loginAsUser" value="signin" >Login User</button>
+				<a href="successfulLogin" class="btn btn-primary btn">Login User</a>
 				<button type="submit"  class="btn btn-primary btn-md" formaction="/registerUser" value="signup" >Register User</button>
 				<button type="reset"  class="btn btn-primary btn-md" >Reset</button>
 		</div>
