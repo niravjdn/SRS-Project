@@ -32,17 +32,17 @@
 					
 				</p>
 				<p>You can know check on our daily services which are as follows:</p>
-				<ol>
-				<li>One way pass for 3.5 CAD</li>
+				
+				<p>One way pass for 3.5 CAD</p>
 					
-						<li>Two way pass for 6.5 CAD</li>
-							<li>One day pass for 10 CAD</li>
-							<li>Three day pass for 19 CAD</li>
-							<li>One week pass for 25 CAD</li>
-								<li>OPUS Recharge for 52 CAD</li>
+						<p>Two way pass for 6.5 CAD</p>
+							<p>One day pass for 10 CAD</p>
+							<p>Three day pass for 19 CAD</p>
+							<p>One week pass for 25 CAD</p>
+								<p>OPUS Recharge for 52 CAD</p>
 								
 				
-				</ol>
+				
 				</div>
 				
 		</div>
