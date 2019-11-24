@@ -11,12 +11,8 @@
 |  DIVYA-DIWAKAR PANDIT | divyapandit13@gmail.com | 
 
 
-## Dummy OPUS Numbers to link
-1212121212125
-1632763288405
-1212121212126
-7132819765986
-12121212121267
+## Note
+Please Refer ReadMe file in project folder to get idea on how to run project and to know about other meta information needed to test project. e.g (OPUS Card numbers pool - to link opus card using opus card number)
 
 ## Task Allocation for Deliverable 1
 
