@@ -23,6 +23,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @Entity
+@NoArgsConstructor
 public class ConfirmationToken {
 	
 	@Id

@@ -71,7 +71,7 @@ public class OpusCardController {
 		opusCard.setEmail(null);
 		cardRepository.save(opusCard);
 		atts.addFlashAttribute("successMessage", "Card has been unlinked Successfully.");
-		return new ModelAndView("redirect:/link");
+		return new ModelAndView("redirect:/manage");
 	}
 	
 	@RequestMapping(value = { "/manage" }, method = RequestMethod.GET)
