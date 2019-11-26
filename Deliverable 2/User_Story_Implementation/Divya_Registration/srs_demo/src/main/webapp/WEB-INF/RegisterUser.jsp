@@ -11,40 +11,41 @@
 </head>
 
 <body style="backgorund-color: #E6E6FA; text-align: center;">
+	<h2><font color="red"> ${message}</font></h2>
 	<form name="myForm" method="post">
 	
 	<div class="container" align="center">
 	<h1>User Registration</h1>
 	<br><br>
 	<div>
-		<label>Email Id</label>
-		<input type="email" name="emailId" placeholder="Email Id">
+		<label>Email Id</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<input type="email" name="emailId" placeholder="Email Id" Required>
 	</div>
 	
 	<br>
 	
 	<div>
-		<label>Password</label>
-		<input type="password" name="password" placeholder="Password">	
+		<label>Password</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<input type="password" pattern=".{8,}"   required title="password should have minimum 8 characters" name="password" placeholder="Password" Required>	
 	</div>
 	<br>
 	<div>
-		<label>User First Name</label>
-		<input type="first name" name="user_firstname" placeholder="First Name">
+		<label>User First Name</label>&nbsp&nbsp
+		<input type="first name" name="user_firstname" placeholder="First Name" Required>
 	</div><br>
 	<div>
-		<label>User Last Name</label>
-		<input type="last name" name="user_lastname" placeholder="Last Name">
+		<label>User Last Name</label>&nbsp&nbsp
+		<input type="last name" name="user_lastname" placeholder="Last Name" Required>
 	</div><br>
 	
 	<div>
-		<label>Address</label>
+		<label>Address</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 		<input type="address" name="address" placeholder="address">
 	</div><br>
 	
 	<div>
-		<label>Phone Number</label>
-		<input type="number" name="phone_number" placeholder="Phone Number">
+		<label>Phone Number</label>&nbsp&nbsp
+		<input type="phone_number" pattern=".{10}" required title="phone number must have 10 characters" name="phone_number" placeholder="Phone Number" Required>
 	</div><br>
 	
 	<br>
