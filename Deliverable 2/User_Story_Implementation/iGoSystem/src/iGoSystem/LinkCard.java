@@ -59,7 +59,7 @@ public class LinkCard extends JFrame {
     JButton btnNewButton = new JButton("Add");
     btnNewButton.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
-       
+       //Check the digit.
         String regex = "\\d+";
         String Opus = txtOpus.getText();
         // only exist number
