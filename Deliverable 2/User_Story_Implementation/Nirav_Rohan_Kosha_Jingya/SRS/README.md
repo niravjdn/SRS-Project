@@ -6,6 +6,9 @@
 java -jar igo.jar
 ```
 
+or else
+
+Import project as maven in eclipse and run iGOApp.java as a Java Application.
 
 - Go to http://localhost:8080
 
