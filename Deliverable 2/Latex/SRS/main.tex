@@ -11,7 +11,8 @@
 \usepackage{longtable}
 \usepackage[toc]{glossaries}
 \usepackage{array}
-
+\setcounter{secnumdepth}{5} % Note that part is -1 level !
+\setcounter{tocdepth}{5}
 \usepackage{listings}
 \usepackage{afterpage}
 \pagestyle{plain}
@@ -295,7 +296,7 @@ This document applies to the Online Ticket Vending Machine (called iGo)  in Mont
 
 
 \chapter{User Stories}
-Use case model helps in understanding behaviour resulting from possible interactions with the system. However, User story represents functionality of a system\cite{userstoriesincontext}. As functionality of a system is exposed, user story can help during implementation part. Positive and negative user stories are included. However, negative user story is not designed or implemented and has no acceptance criteria\cite{}.
+Use case model helps in understanding behaviour resulting from possible interactions with the system. However, User story represents functionality of a system\cite{userstoriesincontext}. As functionality of a system is exposed, user story can help during implementation part. Positive and negative user stories are included. However, negative user story is not designed or implemented and has no acceptance criteria\cite{kamthan2016characterization}.
 
 \section{Global Constraints}
 \begin{enumerate}
@@ -310,7 +311,8 @@ The following are the user stories\cite{userstory} of iGo \gls{usigo} which incl
 \textbf{User Story 1: }
 As an unregistered user of iGo system, I wish to create a new account on iGo website by providing details such as name, valid email id, password and receiving an email that contains link to verify identity in secure manner. Upon completing registration process I intend to log into the system by providing credentials and use services offered by iGo.
 \\
-NEGATIVE USER STORY:
+\subsubsection{Negative user story of iGo registration}
+
 Malicious actor does flood attack on iGo system to make iGo unable to respond to legitimate users.
 
 \textbf{\gls{priority}: High}\\ \\
@@ -381,7 +383,7 @@ Creation of new iGo account is denied by iGo system.
 \textbf{User Story 3: }
 As an existing iGo user, I wish to login iGo website by providing credentials to use services offered by iGo.
 
-NEGATIVE USER STORY:
+\subsubsection{Negative user story of iGo login}
 Malicious actor attempts to steal credentials of legitimate users to get access of iGo account.
 \\ \\
 \textbf{Priority: High}\\ \\
@@ -656,7 +658,7 @@ The iGo system displays the OPUS card balance.
 \textbf{User Story 10: }
 As an existing iGo user having at least one linked OPUS card, I want to top up my OPUS card on iGo using visa/mastercard.
 
-NEGATIVE USER STORY:
+\subsubsection{Negative user story of iGo load OPUS card}
 A fraudster wants to steal credit card information of legitimate users to cause them financial troubles.
 \\ 
 \textbf{Priority: High}\\ \\
