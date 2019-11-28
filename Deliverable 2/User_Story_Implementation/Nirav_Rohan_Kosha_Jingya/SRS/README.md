@@ -8,6 +8,8 @@ java -jar igo.jar
 
 or else
 
+Install lombok - Follow Step 2,3 and 4 (https://howtodoinjava.com/automation/lombok-eclipse-installation-examples/)
+
 Import project as maven in eclipse and run iGOApp.java as a Java Application.
 
 - Go to http://localhost:8080
